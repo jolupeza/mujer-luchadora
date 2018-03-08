@@ -1,0 +1,16 @@
+.Boxes {
+  @include display-flex();
+  @include justify-content(space-between);
+  @include flex-wrap(wrap);
+  margin: 3rem 0;
+}
+.Box {
+  background-color: white;
+  padding: 1rem;
+  width: 30%;
+}
+.Box__title {
+  color: $pink;
+  font-family: $dulcelin;
+  font-size: 1.75rem;
+}

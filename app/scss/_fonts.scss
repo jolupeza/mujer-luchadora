@@ -1,1 +1,54 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700');
+@font-face {
+  font-family: 'dulcelin';
+  src: url('./../fonts/dulcelin.eot');
+  src: url('./../fonts/dulcelin.eot?#iefix') format('embedded-opentype'),
+       url('./../fonts/dulcelin.woff2') format('woff2'),
+       url('./../fonts/dulcelin.woff') format('woff'),
+       url('./../fonts/dulcelin.ttf') format('truetype'),
+       url('./../fonts/dulcelin.svg#dulcelin') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url('./../fonts/icomoon.eot?cd964h');
+  src:  url('./../fonts/icomoon.eot?cd964h#iefix') format('embedded-opentype'),
+    url('./../fonts/icomoon.ttf?cd964h') format('truetype'),
+    url('./../fonts/icomoon.woff?cd964h') format('woff'),
+    url('./../fonts/icomoon.svg?cd964h#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-brillo:before {
+  content: "\e901";
+}
+.icon-carro:before {
+  content: "\e902";
+}
+.icon-electro:before {
+  content: "\e903";
+}
+.icon-joya:before {
+  content: "\e904";
+}
+.icon-camera:before {
+  content: "\e900";
+}

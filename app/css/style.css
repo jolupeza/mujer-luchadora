@@ -1,4 +1,51 @@
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700");
+@font-face {
+  font-family: 'dulcelin';
+  src: url("./../fonts/dulcelin.eot");
+  src: url("./../fonts/dulcelin.eot?#iefix") format("embedded-opentype"), url("./../fonts/dulcelin.woff2") format("woff2"), url("./../fonts/dulcelin.woff") format("woff"), url("./../fonts/dulcelin.ttf") format("truetype"), url("./../fonts/dulcelin.svg#dulcelin") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'icomoon';
+  src: url("./../fonts/icomoon.eot?cd964h");
+  src: url("./../fonts/icomoon.eot?cd964h#iefix") format("embedded-opentype"), url("./../fonts/icomoon.ttf?cd964h") format("truetype"), url("./../fonts/icomoon.woff?cd964h") format("woff"), url("./../fonts/icomoon.svg?cd964h#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-brillo:before {
+  content: "\e901";
+}
+
+.icon-carro:before {
+  content: "\e902";
+}
+
+.icon-electro:before {
+  content: "\e903";
+}
+
+.icon-joya:before {
+  content: "\e904";
+}
+
+.icon-camera:before {
+  content: "\e900";
+}
+
 body {
   background: transparent url("./../images/bg.jpg") 0 0 repeat-y;
   background-size: 100%;
@@ -17,6 +64,11 @@ a {
 }
 a:focus, a:hover {
   color: #e24b70;
+}
+
+.Underline {
+  border-bottom: 3px solid white;
+  padding: 0 3rem;
 }
 
 .Btn {
@@ -59,6 +111,10 @@ a:focus, a:hover {
   display: flex;
   -webkit-justify-content: space-between;
   justify-content: space-between;
+}
+.Main__wrapper--vcenter {
+  -webkit-align-items: center;
+  align-items: center;
 }
 
 .Main__slogan, .Main__register {
@@ -118,6 +174,50 @@ a:focus, a:hover {
   font-weight: 600;
 }
 
+.Main__register__icons {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
+  list-style: none;
+  padding-left: 0;
+}
+.Main__register__icons li {
+  display: inline-block;
+  vertical-align: top;
+}
+.Main__register__icons i[class^="icon-"] {
+  color: white;
+  font-size: 8rem;
+}
+
+.Main__logo {
+  width: 30%;
+}
+
+.Main__welcome {
+  width: 65%;
+}
+
+.Main__welcome__name {
+  color: #e24b70;
+  font-family: "dulcelin", sans-serif;
+  font-size: 4rem;
+}
+
+.Main__welcome__message {
+  color: white;
+  font-size: 4rem;
+  font-weight: 600;
+  text-shadow: #e24b70 2px 2px 0;
+}
+
+.Main__title {
+  color: #e24b70;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
 .Form__label {
   color: #676767;
   font-size: .875rem;
@@ -142,6 +242,10 @@ a:focus, a:hover {
   position: relative;
   text-align: center;
 }
+.Form__file__container i[class^="icon-"] {
+  font-size: 1.5rem;
+  vertical-align: bottom;
+}
 .Form__file__container [type="file"] {
   cursor: pointer;
   display: inline-block;
@@ -153,6 +257,28 @@ a:focus, a:hover {
   right: 0;
   text-align: right;
   top: 0;
+}
+
+.Boxes {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 3rem 0;
+}
+
+.Box {
+  background-color: white;
+  padding: 1rem;
+  width: 30%;
+}
+
+.Box__title {
+  color: #e24b70;
+  font-family: "dulcelin", sans-serif;
+  font-size: 1.75rem;
 }
 
 /*# sourceMappingURL=style.css.map */

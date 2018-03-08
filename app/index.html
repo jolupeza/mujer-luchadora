@@ -6,6 +6,7 @@
   <title>Mujer Luchadora</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
@@ -81,27 +82,31 @@
                 </div>
 
                 <div class="form-group Form__group">
-                  <label for="friend_email" class="Form__label">Correo</label>
-                  <input type="email" class="form-control Form__input" name="friend_email" id="friend_email" />
+                  <label for="friend_phone" class="Form__label">Teléfono</label>
+                  <input type="email" class="form-control Form__input" name="friend_phone" id="friend_phone" />
                 </div>
 
                 <div class="form-group">
-                  <label for="photo" class="Form__label">Comparte tu foto con nosotros</label>
+                  <label for="photo" class="Form__label mt-4">Comparte tu foto con nosotros</label>
                   <label for="photo" class="Form__file__container">
-                    Sube tu foto
+                    <i class="icon-camera mr-2"></i> Sube tu foto
                     <input type="file" class="form-control-file" id="photo" name="photo" />
                   </label>
                 </div>
 
                 <h5 class="Main__register__text text-center">¿Qué podrías empeñar en ILC</h5>
+                <ul class="Main__register__icons">
+                  <li><img src="images/icon-joya.png" alt="" /></li>
+                  <li><img src="images/icon-carro.png" alt="" /></li>
+                  <li><img src="images/icon-electro.png" alt="" /></li>
+                </ul>
 
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" id="terms" name="terms">
+                  <label class="form-check-label" for="terms">He leído y acepto <a href="">los términos y condiciones</a></label>
+                </div>
               </article>
             </section>
-
-            <div class="form-check">
-              <input type="checkbox" class="form-check-input" id="terms" name="terms">
-              <label class="form-check-label" for="terms">He leído y acepto <a href="">los términos y condiciones</a></label>
-            </div>
 
             <p class="text-center mt-4">
               <button type="submit" class="Btn Btn--transparent Btn--borderPink Btn--pink text-uppercase">Enviar</button>

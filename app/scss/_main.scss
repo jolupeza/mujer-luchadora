@@ -1,6 +1,9 @@
 .Main__wrapper {
   @include display-flex();
   @include justify-content(space-between);
+  &--vcenter {
+    @include align-items(center);
+  }
 }
 .Main__slogan, .Main__register {
   @include display-flex();
@@ -49,4 +52,41 @@
   color: $grey;
   font-size: .875rem;
   font-weight: 600;
+}
+.Main__register__icons {
+  @include display-flex();
+  @include justify-content(space-around);
+  list-style: none;
+  padding-left: 0;
+  li {
+    display: inline-block;
+    vertical-align: top;
+  }
+  i[class^="icon-"] {
+    color: white;
+    font-size: 8rem;
+  }
+}
+
+.Main__logo {
+  width: 30%;
+}
+.Main__welcome {
+  width: 65%;
+}
+.Main__welcome__name {
+  color: $pink;
+  font-family: $dulcelin;
+  font-size: 4rem;
+}
+.Main__welcome__message {
+  color: white;
+  font-size: 4rem;
+  font-weight: 600;
+  @include text-shadow($pink 2px 2px 0);
+}
+.Main__title {
+  color: $pink;
+  font-size: 2.5rem;
+  font-weight: 700;
 }

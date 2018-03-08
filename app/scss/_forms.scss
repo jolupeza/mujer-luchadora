@@ -26,6 +26,10 @@
   padding: .5rem 0;
   position: relative;
   text-align: center;
+  i[class^="icon-"] {
+    font-size: 1.5rem;
+    vertical-align: bottom;
+  }
   [type="file"] {
     cursor: pointer;
     display: inline-block;
