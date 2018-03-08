@@ -1,0 +1,52 @@
+.Main__wrapper {
+  @include display-flex();
+  @include justify-content(space-between);
+}
+.Main__slogan, .Main__register {
+  @include display-flex();
+  @include flex-wrap(wrap);
+  @include align-content(space-between);
+  width: 48%;
+
+}
+.Main__slogan__figure, .Main__slogan__info, .Main__slogan__message {
+  width: 100%;
+}
+.Main__slogan__info {
+  p {
+    font-size: 1.375rem;
+  }
+}
+.Main__slogan__message {
+  h4 {
+    color: $pink;
+    font-size: 2rem;
+    font-weight: 600;
+  }
+}
+
+.Main__register__title, .Main__form {
+  width: 100%;
+}
+.Main__register__form {
+  @include display-flex();
+  @include justify-content(space-between);
+}
+.Main__register__form__box {
+  width: 45%;
+}
+.Main__register__title {
+  color: $pink;
+  font-size: 1.75rem;
+  font-weight: 600;
+}
+.Main__register__form__subtitle {
+  color: $grey;
+  font-size: 1rem;
+  font-weight: 700;
+}
+.Main__register__text {
+  color: $grey;
+  font-size: .875rem;
+  font-weight: 600;
+}

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Mujer Luchadora</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="Header">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h1 class="Header-logo">
+            <a href="index.html">
+              <img src="./images/logo.png" alt="Inversiones La Cruz" />
+            </a>
+          </h1>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="Main mt-4 mb-4">
+    <div class="container">
+      <section class="Main__wrapper">
+        <article class="Main__slogan">
+          <figure class="Main__slogan__figure text-center">
+            <img src="./images/mujer-luchadora.png" alt="" class="img-fluid" />
+          </figure>
+          <div class="Main__slogan__info">
+            <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus neque non dicta dolorum dolore quaerat a illum eveniet inventore.</p>
+          </div>
+          <footer class="Main__slogan__message">
+            <h4 class="text-center">Gane un vale para dos personas</h4>
+          </footer>
+        </article>
+        <article class="Main__register">
+          <h2 class="Main__register__title text-center mb-4">¡Completa tus datos y participa del sorteo de dos vales para dos personas!</h2>
+
+          <form class="Main__form Form" action="">
+            <section class="Main__register__form">
+              <article class="Main__register__form__box">
+                <h3 class="Main__register__form__subtitle text-center">Tus datos personales</h3>
+
+                <div class="form-group Form__group">
+                  <label for="name" class="Form__label">Nombre</label>
+                  <input type="text" class="form-control Form__input" name="name" id="name" />
+                </div>
+
+                <div class="form-group Form__group">
+                  <label for="dni" class="Form__label">D.N.I.</label>
+                  <input type="text" class="form-control Form__input" name="dni" id="dni" />
+                </div>
+
+                <div class="form-group Form__group">
+                  <label for="phone" class="Form__label">Teléfono</label>
+                  <input type="text" class="form-control Form__input" name="phone" id="phone" />
+                </div>
+
+                <div class="form-group Form__group">
+                  <label for="district_id" class="Form__label">Distrito</label>
+                  <select class="form-control Form__input" name="district_id" id="district_id">
+                    <option value="">-- Seleccione su Distrito --</option>
+                  </select>
+                </div>
+
+                <div class="form-group Form__group">
+                  <label for="email" class="Form__label">Correo</label>
+                  <input type="email" class="form-control Form__input" name="email" id="email" />
+                </div>
+              </article>
+              <article class="Main__register__form__box">
+                <h3 class="Main__register__form__subtitle text-center">¿Con quién compartirás el premio?</h3>
+
+                <div class="form-group Form__group">
+                  <label for="friend_name" class="Form__label">Nombre</label>
+                  <input type="text" class="form-control Form__input" name="friend_name" id="friend_name" />
+                </div>
+
+                <div class="form-group Form__group">
+                  <label for="friend_email" class="Form__label">Correo</label>
+                  <input type="email" class="form-control Form__input" name="friend_email" id="friend_email" />
+                </div>
+
+                <div class="form-group">
+                  <label for="photo" class="Form__label">Comparte tu foto con nosotros</label>
+                  <label for="photo" class="Form__file__container">
+                    Sube tu foto
+                    <input type="file" class="form-control-file" id="photo" name="photo" />
+                  </label>
+                </div>
+
+                <h5 class="Main__register__text text-center">¿Qué podrías empeñar en ILC</h5>
+
+              </article>
+            </section>
+
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" id="terms" name="terms">
+              <label class="form-check-label" for="terms">He leído y acepto <a href="">los términos y condiciones</a></label>
+            </div>
+
+            <p class="text-center mt-4">
+              <button type="submit" class="Btn Btn--transparent Btn--borderPink Btn--pink text-uppercase">Enviar</button>
+            </p>
+          </form>
+        </article>
+      </section>
+    </div>
+  </main>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

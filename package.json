@@ -1,0 +1,41 @@
+{
+  "name": "ilc-landing",
+  "version": "1.0.0",
+  "description": "Inversiones La Cruz Landing",
+  "main": "gulpfile.js",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jolupeza/forget-front"
+  },
+  "keywords": [
+    "Forget",
+    "Website",
+    "Watson",
+    "Agencia Watson"
+  ],
+  "author": "José Pérez <joseluis@watson.pe>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jolupeza/forget-front/issues"
+  },
+  "homepage": "https://github.com/jolupeza/forget-front#README",
+  "devDependencies": {
+    "animate.css": "^3.5.2",
+    "browser-sync": "^2.23.6",
+    "browserify": "^15.2.0",
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-compass": "^2.1.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-if": "^2.0.2",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-uglify": "^3.0.0",
+    "vinyl-source-stream": "^2.0.0",
+    "yargs": "^11.0.0"
+  }
+}

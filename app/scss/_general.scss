@@ -1,0 +1,15 @@
+body {
+  background: transparent url('./../images/bg.jpg') 0 0 repeat-y;
+  background-size: 100%;
+  color: $text-color;
+  font-family: $opensans;
+  font-size: 16px;
+  min-height: 100vh;
+}
+a {
+  color: $skyBlue;
+  @include transition(color .3s ease-in);
+  &:focus, &:hover {
+    color: $pink;
+  }
+}
