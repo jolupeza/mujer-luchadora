@@ -16,4 +16,7 @@ a {
 .Underline {
   border-bottom: 3px solid white;
   padding: 0 3rem;
+  @media screen and (max-width: 575px) {
+    padding: 0;
+  }
 }

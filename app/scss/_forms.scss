@@ -10,6 +10,9 @@
 }
 .Form__input {
   @include border-radius(1rem);
+  @media screen and (max-width: 991px) {
+    line-height: 2rem;
+  }
   &[type="text"], &[type="email"] {
     @include input-placeholder {
     }

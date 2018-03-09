@@ -4,20 +4,51 @@
   &--vcenter {
     @include align-items(center);
   }
+  @media screen and (max-width: 767px) {
+    @include flex-wrap(wrap);
+  }
 }
 .Main__slogan, .Main__register {
   @include display-flex();
   @include flex-wrap(wrap);
   @include align-content(space-between);
   width: 48%;
-
+  @media screen and (max-width: 991px) {
+    @include align-content(center);
+  }
+}
+.Main__slogan {
+  @media screen and (max-width: 991px) {
+    width: 30%;
+  }
+  @media screen and (max-width: 767px) {
+    width: 100%;
+  }
+}
+.Main__register {
+  @media screen and (max-width: 991px) {
+    width: 65%;
+  }
+  @media screen and (max-width: 767px) {
+    width: 100%;
+  }
 }
 .Main__slogan__figure, .Main__slogan__info, .Main__slogan__message {
   width: 100%;
 }
+.Main__slogan__figure {
+  img {
+    @media screen and (max-width: 767px) {
+      width: 50%;
+    }
+  }
+}
 .Main__slogan__info {
   p {
     font-size: 1.375rem;
+    @media screen and (max-width: 991px) {
+      font-size: 1.1rem;
+    }
   }
 }
 .Main__slogan__message {
@@ -25,6 +56,9 @@
     color: $pink;
     font-size: 2rem;
     font-weight: 600;
+    @media screen and (max-width: 991px) {
+      font-size: 1.7rem;
+    }
   }
 }
 
@@ -34,9 +68,15 @@
 .Main__register__form {
   @include display-flex();
   @include justify-content(space-between);
+  @media screen and (max-width: 575px) {
+    @include flex-wrap(wrap);
+  }
 }
 .Main__register__form__box {
   width: 45%;
+  @media screen and (max-width: 575px) {
+    width: 100%;
+  }
 }
 .Main__register__title {
   color: $pink;
@@ -74,19 +114,43 @@
 .Main__welcome {
   width: 65%;
 }
+.Main__logo, .Main__welcome {
+  @media screen and (max-width: 575px) {
+    width: 100%;
+  }
+}
+.Main__logo__figure {
+  img {
+    @media screen and (max-width: 575px) {
+      width: 50%;
+    }
+  }
+}
 .Main__welcome__name {
   color: $pink;
   font-family: $dulcelin;
   font-size: 4rem;
+  @media screen and (max-width: 991px) {
+    font-size: 3rem;
+  }
 }
 .Main__welcome__message {
   color: white;
   font-size: 4rem;
   font-weight: 600;
   @include text-shadow($pink 2px 2px 0);
+  @media screen and (max-width: 991px) {
+    font-size: 2rem;
+  }
 }
 .Main__title {
   color: $pink;
   font-size: 2.5rem;
   font-weight: 700;
+  @media screen and (max-width: 991px) {
+    font-size: 2rem;
+  }
+  @media screen and (max-width: 575px) {
+    font-size: 1.7rem;
+  }
 }

@@ -6,8 +6,20 @@
 }
 .Box {
   background-color: white;
+  @include display-flex();
+  @include align-content(space-between);
+  @include flex-wrap(wrap);
   padding: 1rem;
   width: 30%;
+  @media screen and (max-width: 767px) {
+    width: 48%;
+  }
+  @media screen and (max-width: 575px) {
+    width: 100%;
+  }
+}
+.Box__figure, .Box__title {
+  width: 100%;
 }
 .Box__title {
   color: $pink;

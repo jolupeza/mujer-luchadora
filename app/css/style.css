@@ -70,6 +70,11 @@ a:focus, a:hover {
   border-bottom: 3px solid white;
   padding: 0 3rem;
 }
+@media screen and (max-width: 575px) {
+  .Underline {
+    padding: 0;
+  }
+}
 
 .Btn {
   -moz-border-radius: 1.5rem;
@@ -102,8 +107,13 @@ a:focus, a:hover {
   padding: 1rem 0;
 }
 
-.Header-logo {
+.Header__logo {
   margin-bottom: 0;
+}
+@media screen and (max-width: 991px) {
+  .Header__logo {
+    text-align: center;
+  }
 }
 
 .Main__wrapper {
@@ -116,6 +126,12 @@ a:focus, a:hover {
   -webkit-align-items: center;
   align-items: center;
 }
+@media screen and (max-width: 767px) {
+  .Main__wrapper {
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+}
 
 .Main__slogan, .Main__register {
   display: -webkit-flex;
@@ -126,19 +142,63 @@ a:focus, a:hover {
   align-content: space-between;
   width: 48%;
 }
+@media screen and (max-width: 991px) {
+  .Main__slogan, .Main__register {
+    -webkit-align-content: center;
+    align-content: center;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .Main__slogan {
+    width: 30%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .Main__slogan {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .Main__register {
+    width: 65%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .Main__register {
+    width: 100%;
+  }
+}
 
 .Main__slogan__figure, .Main__slogan__info, .Main__slogan__message {
   width: 100%;
 }
 
+@media screen and (max-width: 767px) {
+  .Main__slogan__figure img {
+    width: 50%;
+  }
+}
+
 .Main__slogan__info p {
   font-size: 1.375rem;
+}
+@media screen and (max-width: 991px) {
+  .Main__slogan__info p {
+    font-size: 1.1rem;
+  }
 }
 
 .Main__slogan__message h4 {
   color: #e24b70;
   font-size: 2rem;
   font-weight: 600;
+}
+@media screen and (max-width: 991px) {
+  .Main__slogan__message h4 {
+    font-size: 1.7rem;
+  }
 }
 
 .Main__register__title, .Main__form {
@@ -151,9 +211,20 @@ a:focus, a:hover {
   -webkit-justify-content: space-between;
   justify-content: space-between;
 }
+@media screen and (max-width: 575px) {
+  .Main__register__form {
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+}
 
 .Main__register__form__box {
   width: 45%;
+}
+@media screen and (max-width: 575px) {
+  .Main__register__form__box {
+    width: 100%;
+  }
 }
 
 .Main__register__title {
@@ -199,10 +270,27 @@ a:focus, a:hover {
   width: 65%;
 }
 
+@media screen and (max-width: 575px) {
+  .Main__logo, .Main__welcome {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .Main__logo__figure img {
+    width: 50%;
+  }
+}
+
 .Main__welcome__name {
   color: #e24b70;
   font-family: "dulcelin", sans-serif;
   font-size: 4rem;
+}
+@media screen and (max-width: 991px) {
+  .Main__welcome__name {
+    font-size: 3rem;
+  }
 }
 
 .Main__welcome__message {
@@ -211,11 +299,26 @@ a:focus, a:hover {
   font-weight: 600;
   text-shadow: #e24b70 2px 2px 0;
 }
+@media screen and (max-width: 991px) {
+  .Main__welcome__message {
+    font-size: 2rem;
+  }
+}
 
 .Main__title {
   color: #e24b70;
   font-size: 2.5rem;
   font-weight: 700;
+}
+@media screen and (max-width: 991px) {
+  .Main__title {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 575px) {
+  .Main__title {
+    font-size: 1.7rem;
+  }
 }
 
 .Form__label {
@@ -228,6 +331,11 @@ a:focus, a:hover {
   -moz-border-radius: 1rem;
   -webkit-border-radius: 1rem;
   border-radius: 1rem;
+}
+@media screen and (max-width: 991px) {
+  .Form__input {
+    line-height: 2rem;
+  }
 }
 
 .Form__file__container {
@@ -271,8 +379,28 @@ a:focus, a:hover {
 
 .Box {
   background-color: white;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-content: space-between;
+  align-content: space-between;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
   padding: 1rem;
   width: 30%;
+}
+@media screen and (max-width: 767px) {
+  .Box {
+    width: 48%;
+  }
+}
+@media screen and (max-width: 575px) {
+  .Box {
+    width: 100%;
+  }
+}
+
+.Box__figure, .Box__title {
+  width: 100%;
 }
 
 .Box__title {
